@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "tools.ip",
+      "type": "cn.mytest.properties.IpProperties",
+      "sourceType": "cn.mytest.properties.IpProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "tools.ip.cycle",
+      "type": "java.lang.Long",
+      "description": "显示日志周期",
+      "sourceType": "cn.mytest.properties.IpProperties",
+      "defaultValue": 5
+    },
+    {
+      "name": "tools.ip.cycle-reset",
+      "type": "java.lang.Boolean",
+      "description": "是否周期内重置函数",
+      "sourceType": "cn.mytest.properties.IpProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "tools.ip.model",
+      "type": "java.lang.String",
+      "description": "日志输出模式 ：Detail 详细模式,SIMPLE 极简模式;",
+      "sourceType": "cn.mytest.properties.IpProperties"
+    }
+  ],
+  "hints": [
+    {
+      "name": "tools.ip.model",
+      "values": [
+        {
+          "value": "detail",
+          "description": "详细模式."
+        },
+        {
+          "value": "simple",
+          "description": "简单模式."
+        }
+      ]
+    }
+
+  ]
+}
